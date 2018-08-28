@@ -3,8 +3,8 @@ swagger: "2.0"
 x-collection-name: Data.Gov
 x-complete: 0
 info:
-  title: Data.gov API Get Spatial Zones Suggest
-  description: Suggest geospatial zones
+  title: Data.gov API Get Spatial Granularities
+  description: List all known spatial granularities
   version: "3"
 host: catalog.data.gov
 basePath: /api/3/
@@ -43,54 +43,6 @@ paths:
       tags:
       - Spatial
       - Granularities
-  /spatial/levels:
-    get:
-      summary: Get Spatial Levels
-      description: List all known levels
-      operationId: getSpatialLevels
-      x-api-path-slug: spatiallevels-get
-      responses:
-        200:
-          description: OK
-      tags:
-      - Spatial
-      - Levels
-  /spatial/zone/{id}:
-    get:
-      summary: Get Spatial Zone
-      description: Fetch a zone
-      operationId: getSpatialZone
-      x-api-path-slug: spatialzoneid-get
-      parameters:
-      - in: path
-        name: id
-        description: A zone identifier
-      responses:
-        200:
-          description: OK
-      tags:
-      - Spatial
-      - Zone
-  /spatial/zones/suggest:
-    get:
-      summary: Get Spatial Zones Suggest
-      description: Suggest geospatial zones
-      operationId: getSpatialZonesSuggest
-      x-api-path-slug: spatialzonessuggest-get
-      parameters:
-      - in: query
-        name: q
-        description: The string to autocomplete/suggest
-      - in: query
-        name: size
-        description: The amount of suggestion to fetch
-      responses:
-        200:
-          description: OK
-      tags:
-      - Spatial
-      - Zones
-      - Suggest
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0

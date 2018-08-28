@@ -12,11 +12,55 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "10"
 x-alexaRank: "0"
 tags: Spatial
-created: "2018-08-26"
-modified: "2018-08-26"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/spatial/master/_listings/data-gov/apis.md
 specificationVersion: "0.14"
 apis:
+- name: Data.gov API - Get Spatial Coverage Level
+  x-api-slug: spatialcoveragelevel-get
+  description: List each zone for a given level with their datasets count
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/data-gov-logo.png
+  humanURL: http://data.gov/
+  baseURL: https://catalog.data.gov//api/3/
+  tags: Federal Government, Federal Government, Federal Government   GSA, Stack Network,
+    Data Provider, API Provider, Profiles, General Data
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/spatial/master/_listings/data-gov/spatialcoveragelevel-get-openapi.md
+- name: Data.gov API - Get Spatial Granularities
+  x-api-slug: spatialgranularities-get
+  description: List all known spatial granularities
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/data-gov-logo.png
+  humanURL: http://data.gov/
+  baseURL: https://catalog.data.gov//api/3/
+  tags: Federal Government, Federal Government, Federal Government   GSA, Stack Network,
+    Data Provider, API Provider, Profiles, General Data
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/spatial/master/_listings/data-gov/spatialgranularities-get-openapi.md
+- name: Data.gov API - Get Spatial Levels
+  x-api-slug: spatiallevels-get
+  description: List all known levels
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/data-gov-logo.png
+  humanURL: http://data.gov/
+  baseURL: https://catalog.data.gov//api/3/
+  tags: Federal Government, Federal Government, Federal Government   GSA, Stack Network,
+    Data Provider, API Provider, Profiles, General Data
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/spatial/master/_listings/data-gov/spatiallevels-get-openapi.md
+- name: Data.gov API - Get Spatial Zone
+  x-api-slug: spatialzoneid-get
+  description: Fetch a zone
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/data-gov-logo.png
+  humanURL: http://data.gov/
+  baseURL: https://catalog.data.gov//api/3/
+  tags: Federal Government, Federal Government, Federal Government   GSA, Stack Network,
+    Data Provider, API Provider, Profiles, General Data
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/spatial/master/_listings/data-gov/spatialzoneid-get-openapi.md
 - name: Data.gov API - Get Spatial Zones Suggest
   x-api-slug: spatialzonessuggest-get
   description: Suggest geospatial zones
